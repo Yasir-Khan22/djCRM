@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+</head>
+<body>
+    <!-- Create Navbar here -->
+    {% include 'webapp/navbar.html' %}
+    <div>
+        {% block content %}
+        <hr>
+        {% endblock %}
+    </div>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+
+</html>
